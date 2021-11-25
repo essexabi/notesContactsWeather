@@ -1,0 +1,339 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(175, 197, 101);
+  margin: auto;
+  padding: 0;
+  width: 80%;
+}
+
+body {
+  background-color: rgb(42, 42, 42);
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(42, 42, 42);
+  font-size: 80px;
+  margin-top: 0px;
+  margin-left: 10px;
+  float: left;
+}
+
+.spinner {
+  border: 4px solid rgb(175, 197, 101);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: auto;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.title h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: rgb(42, 42, 42);
+  font-size: 30px;
+  margin: 15px;
+
+  float: left;
+}
+
+.titleSection {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: rgb(175, 197, 101);
+  font-weight: lighter;
+  float: left;
+}
+
+ul,
+ol {
+  text-align: justify;
+}
+.form-group {
+  display: block;
+}
+
+.form-group label {
+  display: block;
+  font-size: 15px;
+  color: rgb(175, 197, 101);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  float: left;
+  margin-left: 20px;
+}
+
+.form-group input {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.note li {
+  width: 100%;
+  color: white;
+  background-color: rgb(46, 46, 46);
+}
+
+.aside textarea {
+  width: 80%;
+  margin-bottom: 5px;
+  height: auto;
+  border: 1px solid rgb(175, 197, 101);
+  background-color: rgb(172, 167, 167);
+  color: white;
+}
+
+button {
+  width: 80%;
+  height: 32px;
+  border: 0px;
+  color: white;
+  background-color: rgb(175, 197, 101);
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.section {
+  display: flex;
+}
+
+.aside button {
+  width: 80%;
+  height: 60px;
+  border: 0px;
+  color: white;
+  background-color: rgb(175, 197, 101);
+  margin-bottom: 30px;
+  margin-top: 25px;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.aside hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(175, 197, 101);
+  margin: 1em 0;
+  padding: 0;
+  width: 80%;
+  margin: auto;
+}
+
+.aside button:hover {
+  color: rgb(175, 197, 101);
+  background-color: rgb(42, 42, 42);
+}
+
+.aside h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.aside {
+  width: 30%;
+  height: 100%;
+  float: right;
+  display: block;
+  margin-left: 30px;
+  margin-top: 19px;
+  margin-bottom: 30px;
+  background-color: rgb(46, 46, 46);
+  text-align: center;
+}
+
+.title {
+  height: 65px;
+  width: auto;
+  background: rgb(175, 197, 101);
+  display: block;
+}
+
+.createNote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.note {
+  margin-bottom: 10px;
+  list-style: none;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: -20px;
+  width: 65%;
+  float: left;
+}
+
+.titleNote {
+  color: rgb(175, 197, 101);
+  margin: 10px;
+  line-height: 30px;
+}
+.titleNote::first-letter {
+  text-transform: capitalize;
+}
+
+.bodyNote {
+  color: white;
+  margin: 10px;
+  text-indent: 10px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+.bodyNote::first-letter {
+  text-transform: capitalize;
+}
+
+.contact {
+  margin-bottom: 10px;
+  list-style: none;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left: -20px;
+  width: 65%;
+  float: left;
+}
+
+.contact span {
+  color: rgb(175, 197, 101);
+}
+
+.course {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  width: 99%;
+  background-color: rgb(46, 46, 46);
+}
+
+.courseTitle {
+  color: rgb(175, 197, 101);
+  margin: auto;
+}
+
+.coursePart {
+  color: white;
+  margin: auto;
+}
+
+.countries {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.searchCountry {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.searchCountry .form-group {
+  display: flex;
+  text-align: justify;
+  width: 50%;
+}
+
+.searchCountry .form-group button {
+  width: 20%;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.searchCountry .form-group input {
+  border: 0px;
+}
+
+.country {
+  width: 99%;
+  height: 200px;
+  background-color: rgb(46, 46, 46);
+  margin-top: 5px;
+}
+
+.countryName {
+  color: rgb(175, 197, 101);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: start;
+  margin-left: 15px;
+}
+
+.country .image-wrap {
+  width: 100px;
+  height: 60px;
+  margin: auto;
+  overflow: hidden;
+  float: left;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+.country img {
+  width: 100%;
+  height: auto;
+}
+
+.country-content {
+  display: block;
+  width: 100%;
+  text-align: justify;
+}
+
+.country-items {
+  display: block;
+  float: right;
+  width: 60%;
+  margin: auto;
+}
+
+.country-item {
+  font-size: 15px;
+  color: white;
+  margin-left: 25px;
+  margin-top: -2px;
+  display: block;
+}
+
+.total {
+  color: grey;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
